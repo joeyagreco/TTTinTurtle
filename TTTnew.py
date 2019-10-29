@@ -1,6 +1,6 @@
 # 2019 Joey Greco
 # 
-# Tic-Tac-Toe
+# Tic-Tac-Toe using Turtle
 
 import turtle
 
