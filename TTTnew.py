@@ -1,5 +1,5 @@
 # 2019 Joey Greco
-#
+# 
 # Tic-Tac-Toe
 
 import turtle
@@ -477,7 +477,7 @@ class Board():
 			# call function to display text under board
 			self.updateBoardText()
 			
-			# check whos turn it is and draw X or O in index accordingly
+			# check whose turn it is and draws X or O in index accordingly
 			if(self.xTurn):
 				self.updateBoard(self.getMove(), self.xTurn)
 			else:
@@ -491,13 +491,14 @@ class Board():
 			if(self.gameOver()):
 				# call function again to show outcome on board
 				self.updateBoardText()
-				print("game over")
+				print("Game Over")
+				turtle.done()
 				break
 			
-			
+# create and play the game			
 b = Board()	
 b.play()
-turtle.done()
+
 
 
 
