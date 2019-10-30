@@ -289,8 +289,6 @@ class Board():
 		# first, clear any text there already
 		self.eraseBoardText()
 		
-		print(self.t.pos())
-		
 		# check first if the game is over
 		# if it is, we must display the outcome in the bottom text
 		if(self.VLDrawn):
@@ -487,7 +485,6 @@ class Board():
 			self.changeTurn()
 			
 			# now check if a game-ending condition has been met
-			print(self.turnsCompleted)
 			if(self.gameOver()):
 				# call function again to show outcome on board
 				self.updateBoardText()
