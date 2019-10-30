@@ -4,7 +4,7 @@
 
 import turtle
 
-class Board():
+class Board:	
 	
 	def __init__(self):
 	
@@ -33,7 +33,7 @@ class Board():
 		self.FONT = ("Arial", 22, "normal")
 		# font alignment for updateBoardText()
 		self.ALIGN = "center"
-		
+			
 		# create turtle and screen
 		self.t = turtle.Turtle()
 		self.t.screen.setup(500, 500)
