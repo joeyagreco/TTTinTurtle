@@ -475,11 +475,8 @@ class Board:
 			# call function to display text under board
 			self.updateBoardText()
 			
-			# check whose turn it is and draws X or O in index accordingly
-			if(self.xTurn):
-				self.updateBoard(self.getMove(), self.xTurn)
-			else:
-				self.updateBoard(self.getMove(), self.xTurn)
+			# check whose turn it is and draw X or O in index accordingly
+			self.updateBoard(self.getMove(), self.xTurn)
 			
 			# now change whose turn it is
 			self.changeTurn()
